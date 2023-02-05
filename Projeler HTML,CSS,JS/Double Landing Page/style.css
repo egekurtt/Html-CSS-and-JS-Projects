@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1{
+    font-size: 100px;
+    color: aliceblue;
+    backdrop-filter: brightness(0.5);
+    letter-spacing: 4px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    font-size: 25px;
+    border: 4px solid ;
+    cursor: pointer;
+    transition: background-color 1s;
+    white-space: nowrap;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.split{
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+.split.left{
+    position: absolute;
+    left: 0;
+    background-color: pink;
+    background-image: url("https://www.arcelik.com.tr/medias/7967481600-LO1-20210922-151440.png?context=bWFzdGVyfGltYWdlc3wyOTczMDQ1fGltYWdlL3BuZ3xoNDgvaDk2LzEwNDE0NDAxMzIzMDM4Lzc5Njc0ODE2MDBfTE8xXzIwMjEwOTIyXzE1MTQ0MC5wbmd8MzViODFiYzU3ZDk5OTkwZDM0ZjBhMWI5NWEwYmY4OGEyYzcyZjY3MTcyMjBjOGYzNmM3YTVlZDVlZGI4NzY1YQ");
+    background-size: cover;
+}
+
+.split.right{
+    position: absolute;
+    right: 0;
+    background-color: lightblue;
+    background-image: url("https://bingolticaret.com/wp-content/uploads/2021/10/samsung-galaxy-a52-128gb-mavi-cep-telefonu-3.png");
+    background-size: cover;
+}
+
+.active-left .left{
+    width: 75%;
+}
+
+.active-left .right{
+    width: 25%;
+}
+
+.active-right .left{
+    width: 25%;
+}
+
+.active-right .right{
+    width: 75%;
+}
+
+.left, .right{
+    transition: width 2s ease-in-out;
+}
